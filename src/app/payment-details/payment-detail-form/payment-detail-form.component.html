@@ -3,26 +3,28 @@
         [value]="service.formData.paymentDetailId">
 
     <div class="form-group">
-        <label>Card Owner Name</label>
+        <label>CARD OWNER NAME</label>
         <input class="form-control form-control-lg" placeholder="Full name" 
             name="cardOwnerName" #cardOwnerName="ngModel" [(ngModel)]="service.formData.cardOwnerName">
     </div>
 
     <div class="form-group">
-        <label>Card Number</label>
+        <label>CARD NUMBER</label>
         <input class="form-control form-control-lg" placeholder="6 digit card number" 
             name="cardNumber" #cardNumber="ngModel" [(ngModel)]="service.formData.cardOwnerName">
     </div>
 
-    <div class="form-group">
-        <label>Security Code</label>
-        <input type="password" class="form-control form-control-lg" placeholder="Security code" 
-            name="securityCode" #securityCode="ngModel" [(ngModel)]="service.formData.cardOwnerName">
-    </div>
-
-    <div class="form-group">
-        <label>Valid Until</label>
-        <input class="form-control form-control-lg" placeholder="MM/YY" 
-            name="expirationDate" #expirationDate="ngModel" [(ngModel)]="service.formData.cardOwnerName">
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label>SECURITY CODE</label>
+            <input type="password" class="form-control form-control-lg" placeholder="Security code" 
+                name="securityCode" #securityCode="ngModel" [(ngModel)]="service.formData.cardOwnerName">
+        </div>
+    
+        <div class="form-group col-md-6">
+            <label>VALID UNTIL</label>
+            <input class="form-control form-control-lg" placeholder="MM/YY" 
+                name="expirationDate" #expirationDate="ngModel" [(ngModel)]="service.formData.cardOwnerName">
+        </div>
     </div>
 </form>
